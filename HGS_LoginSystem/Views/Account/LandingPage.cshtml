@@ -1,0 +1,35 @@
+﻿@*@model HGS_LoginSystem.Models.User*@
+
+@model IEnumerable<HGS_LoginSystem.Models.User>
+
+@{
+    ViewBag.Title = "Landing Page";
+}
+
+<h2>Welcome to HGS</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Date of Birth</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserID</td>
+                <td>@user.UserName</td>
+                <td>@user.DateOfBirth.ToShortDateString()</td>
+                <td>@user.Email</td>
+                <td>@user.Gender</td>
+                <td>@user.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
