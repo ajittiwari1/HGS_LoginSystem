@@ -18,6 +18,6 @@ CREATE TABLE Users (
 
 select * from users
 
-SELECT * FROM Users WHERE UserID= 'INT100024' AND Email = 'factp2000@gmail.com' AND DateOfBirth = '2005-04-01';
+
 
 </p>
